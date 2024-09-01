@@ -1,6 +1,15 @@
 use crate::{NUM_COLS, NUM_ROWS};
 
 pub type Frame = Vec<Vec<& 'static str>>;
+// [ 
+//   [' ', 'P', ' ', ' ', ' '],  // Column 0, has 5 rows in it
+//   [' ', ' ', 'E', ' ', ' '],  // Column 1
+//   [' ', ' ', ' ', '*', ' '],  // Column 2
+//   [' ', ' ', ' ', ' ', ' '],  // Column 3
+//   [' ', ' ', ' ', ' ', ' ']   // Column 4
+// ]
+
+
 
 pub fn new_frame() -> Frame {
     let mut cols = Vec::with_capacity(NUM_COLS);
